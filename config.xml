@@ -6,7 +6,6 @@
     <content src="index.html" />
 
     <platform name="ios|android" />
-    <plugin name="ios|android" />
 
 <!--     <access origin="*.google.com" />
 
@@ -21,6 +20,6 @@
 <!--     <preference name="phonegap-version" value="3.5.0" /> -->
     <preference name="phonegap-version" value="3.1.0" />
 
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm"/>
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="pgb"/>
 
 </widget>
