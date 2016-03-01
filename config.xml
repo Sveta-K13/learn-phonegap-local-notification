@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget   xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="de.appplant.cordova.plugin.local-notification"
-        version="0.8.4">
-        
+<widget   xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
     <name>noname</name>
 
     <content src="index.html" />
@@ -12,6 +8,7 @@
     <access origin="*.googleapis.com" />
 
     <platform name="ios|android" />
+
 <!--     <access origin="*.google.com" />
 
     <plugin name="cordova-plugin-whitelist" version="1" />
