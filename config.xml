@@ -48,6 +48,6 @@
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.network-information" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" spec="0.8.1" source="pgb" />
+    <plugin name="com.simplec.plugins.localnotification" spec="0.3.5" source="pgb" />
 
 </widget>
