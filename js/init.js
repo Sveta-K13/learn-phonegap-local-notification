@@ -21,9 +21,8 @@ function everyhour () {
 }
 
 function stopEveryhour () {
-	cordova.plugins.notification.local.cancel({ 20, function() {
+	cordova.plugins.notification.local.cancel(20, function() {
 			alert("canceling everyhour");
-		}
 	});
 }
 
