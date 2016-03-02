@@ -8,11 +8,16 @@ document.addEventListener('deviceready', function () {
 	    alert(notification.id + " was clicked");
 	}, this);
 
+	cordova.plugins.notification.local.on("trigger", function (notification, state) {
+	    alert(notification.title + " "+ notification.text);
+	}, this);
+
 }, false);
 
 function everyhour () {
 	cordova.plugins.notification.local.schedule({
 		id: 20,
+		title: "Training soon",
 	    text: "by now and everyhour",
 	    every: "hour",
 	    led: "00FFFF", //only android
@@ -29,14 +34,16 @@ function stopEveryhour () {
 function in5sec () {
 
 	var now             = new Date().getTime(),
-	    _5_sec_from_now = new Date(now + 5*1000);
+	    _5_sec_from_now = new Date(now + 5*1000),
+	    now_date = new Date(_5_sec_from_now).toLocaleString();
 
 	cordova.plugins.notification.local.schedule({
 		id: 1,
+		title: "Training soon",
 	    text: "Delayed 5s Notification",
 	    at: _5_sec_from_now,
 	    led: "FF0000",
-	    data: {date: new Date(_5_sec_from_now).toLocaleString()},
+	    data: {date: now_date},
 	    icon: 'file://assets/animals.svg',
 	    smallIcon: 'file://assets/animals.svg'
 	})
@@ -49,6 +56,7 @@ function in5min () {
 
 	cordova.plugins.notification.local.schedule({
 		id: 2,
+		title: "Training soon",
 	    text: "Delayed 5m Notification",
 	    at: _5_min_from_now,
 	    led: "FF0000",
