@@ -12,7 +12,7 @@ function everyhour () {
 	    text: "by now and everyhour",
 	    every: "hour",
 	    led: "00FF00",
-	    data: new Date().toLocaleString();
+	    data: new Date().toLocaleString()
 	});
 }
 
@@ -26,7 +26,7 @@ function in5sec () {
 	    text: "Delayed 5s Notification",
 	    at: _5_sec_from_now,
 	    led: "FF0000",
-	    data: new Date(_5_sec_from_now).toLocaleString();
+	    data: new Date(_5_sec_from_now).toLocaleString()
 	});
 
 }
@@ -42,6 +42,6 @@ function in5min () {
 	    at: _5_min_from_now,
 	    led: "FF0000",
 	    sound: null,
-	    data: new Date(_5_min_from_now).toLocaleString();
+	    data: new Date(_5_min_from_now).toLocaleString()
 	});
 }

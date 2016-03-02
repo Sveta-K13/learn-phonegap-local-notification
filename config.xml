@@ -1,13 +1,12 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <widget
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:gap="http://phonegap.com/ns/1.0"
-    id="ru.ltst.classboom"
+    id="noname"
     version="0.0.1">
 
-    <name>ClassBoom</name>
-    <description>ClassBoom super-app</description>
+    <name>noname</name>
+    <description>super-app</description>
 
     <content src="index.html" />
 
@@ -28,7 +27,6 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="android-build-tool" value="gradle" />
 
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
 
 <!--     <icon src="icon.png" /> -->
@@ -52,28 +50,4 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-</widget><?xml version='1.0' encoding='utf-8'?>
-<!-- <widget   xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-
-    <name>noname</name>
-
-    <content src="index.html" />
-
-    <platform name="ios|android" />
-
-    <access origin="*.google.com" />
-
-    <plugin name="cordova-plugin-whitelist" version="1" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-
-     <preference name="phonegap-version" value="3.5.0" /> 
-    <preference name="phonegap-version" value="3.1.0" />
-
-
 </widget>
--->
