@@ -9,7 +9,9 @@ document.addEventListener('deviceready', function () {
 	}, this);
 
 	cordova.plugins.notification.local.on("trigger", function (notification, state) {
-	    alert(notification.title + " "+ notification.text);
+		if (state != "background") {    
+	    	alert(notification.title + " "+ notification.text);
+    	}
 	}, this);
 
 }, false);
