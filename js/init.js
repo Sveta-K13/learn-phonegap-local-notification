@@ -40,7 +40,7 @@ function in5sec () {
 	    data: {date: new Date(_5_sec_from_now).toLocaleString()},
 	    icon: 'file://assets/animals.svg',
 	    smallIcon: 'file://assets/animals.svg'
-
+	})
 }
 
 function in5min () {
