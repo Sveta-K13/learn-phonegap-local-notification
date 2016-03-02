@@ -46,8 +46,8 @@ function in5sec () {
 	    at: _5_sec_from_now,
 	    led: "FF0000",
 	    data: {date: now_date},
-	    icon: 'file://assets/animals.svg',
-	    smallIcon: 'file://assets/animals.svg'
+	    icon: 'file://assets/calendar-25.png',
+	    smallIcon: 'file://assets/calendar-25.png'
 	})
 }
 
